@@ -52,6 +52,11 @@ console.log(badNewArr);
 const newArr = [1, 2, ...arr];
 console.log(newArr);
 
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
 /*
 // Destructuring Objects
 restaurant.orderDelivery({
