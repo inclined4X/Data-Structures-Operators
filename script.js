@@ -43,6 +43,17 @@ const restaurant = {
   },
 };
 
+//Spread operator
+//old way
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+/*
+// Destructuring Objects
 restaurant.orderDelivery({
   time: '23:30',
   address: 'Via del Sole, 21',
