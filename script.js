@@ -60,6 +60,17 @@ console.log(newMenu);
 //copy array
 const mainMenuCopy = [...restaurant.mainMenu];
 
+// Join 2 arrays
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+//literables : arrays , strings , maps ,sets NOT Objects
+
+//string
+const str = 'Jonas';
+const letter = [...str, '', 'S.'];
+console.log(letter);
+
 /*
 // Destructuring Objects
 restaurant.orderDelivery({
