@@ -68,8 +68,10 @@ console.log(menu);
 
 //string
 const str = 'Jonas';
-const letter = [...str, '', 'S.'];
-console.log(letter);
+const letters = [...str, '', 'S.'];
+console.log(letters);
+console.log(...str);
+// console.log(`${...str} Jez`);
 
 /*
 // Destructuring Objects
