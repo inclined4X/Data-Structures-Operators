@@ -47,6 +47,18 @@ const restaurant = {
   },
 };
 
+// Rest Pattern and Parameters
+// rest i sto pack elemeents into arrays
+
+// spread on the right side of the assignment operator
+const arr = [1, 2, ...[3, 4]];
+console.log(arr);
+
+// we can also use it on the left side with destructuring, REST because left side of the =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+/*
 //Spread operator
 //old way
 const arr = [7, 8, 9];
