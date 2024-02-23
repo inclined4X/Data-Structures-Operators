@@ -65,6 +65,10 @@ const [pizza, , rissotto, ...otherFood] = [
 
 console.log(pizza, rissotto, otherFood);
 
+// rest in objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
 /*
 //Spread operator
 //old way
