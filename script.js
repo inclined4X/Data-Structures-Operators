@@ -77,18 +77,27 @@ console.log(letters);
 console.log(...str);
 // console.log(`${...str} Jez`);
 
-// functions arugments
-const ingredients = [
-  prompt("Let's make pasta! Ingrdient 1?"),
-  prompt("Let's make pasta! Ingrdient 2?"),
-  prompt("Let's make pasta! Ingrdient 3?"),
-];
-console.log(ingredients);
+// functions arugments and real world example
+// const ingredients = [
+//   prompt("Let's make pasta! Ingredient 1?"),
+//   prompt("Let's make pasta! Ingredient 2?"),
+//   prompt("Let's make pasta! Ingredient 3?"),
+// ];
+// console.log(ingredients);
 
-restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+// restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 
-//new way using spread operator
-restaurant.orderPasta(...ingredients);
+// //new way using spread operator
+// restaurant.orderPasta(...ingredients);
+
+//since ES 2018 spread operator works on objects
+const newResturant = { foundedIn: 1998, ...restaurant, founder: 'Guiseppe' };
+console.log(newResturant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorante Roma';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 
 /*
 // Destructuring Objects
