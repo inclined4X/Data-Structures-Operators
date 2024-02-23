@@ -87,6 +87,9 @@ console.log(ingredients);
 
 restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 
+//new way using spread operator
+restaurant.orderPasta(...ingredients);
+
 /*
 // Destructuring Objects
 restaurant.orderDelivery({
