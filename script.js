@@ -47,6 +47,7 @@ const restaurant = {
   },
 };
 
+// DESTRUCTURING
 // Rest Pattern and Parameters
 // rest i sto pack elemeents into arrays
 
@@ -68,6 +69,17 @@ console.log(pizza, rissotto, otherFood);
 // rest in objects
 const { sat, ...weekdays } = restaurant.openingHours;
 console.log(weekdays);
+
+//fUNCTIONS
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+
+add(2, 3);
+add(5, 3, 7, 2);
+add(8, 2, 5, 3, 2, 1, 4);
 
 /*
 //Spread operator
