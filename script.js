@@ -41,6 +41,10 @@ const restaurant = {
       `Order recieved! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+  },
 };
 
 //Spread operator
@@ -72,6 +76,16 @@ const letters = [...str, '', 'S.'];
 console.log(letters);
 console.log(...str);
 // console.log(`${...str} Jez`);
+
+// functions arugments
+const ingredients = [
+  prompt("Let's make pasta! Ingrdient 1?"),
+  prompt("Let's make pasta! Ingrdient 2?"),
+  prompt("Let's make pasta! Ingrdient 3?"),
+];
+console.log(ingredients);
+
+restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 
 /*
 // Destructuring Objects
