@@ -52,6 +52,12 @@ const restaurant = {
   },
 };
 
+// Nullish Coalescing Operator
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests);
+
+/*
 // Short circuting
 console.log('--- 0R ---');
 // Use Any data type
@@ -84,8 +90,8 @@ if (restaurant.orderPizza) {
 }
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+ 
 
-/*
 // DESTRUCTURING
 // Rest Pattern and Parameters
 // rest i sto pack elemeents into arrays
