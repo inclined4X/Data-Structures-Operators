@@ -318,7 +318,12 @@ const game = {
 // console.log(players1);
 // const players2 = game.players[1];
 const [players1, players2] = game.players;
+// console.log(players2);
 
 // task2
 const [gk, ...fieldPlayers] = players1;
-console.log(gk);
+// console.log(gk);
+
+// task 3
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
