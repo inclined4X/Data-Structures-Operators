@@ -331,3 +331,6 @@ console.log(allPlayers);
 // task 4
 const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 console.log(players1Final);
+
+// task 5
+const { team1, openingHours, categories } = game.odds;
