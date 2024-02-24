@@ -78,6 +78,13 @@ console.log(7 && 'Jonas');
 
 console.log('Hello' && 23 && null && 'Jonas');
 
+// real world application
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+
 /*
 // DESTRUCTURING
 // Rest Pattern and Parameters
