@@ -52,6 +52,7 @@ const restaurant = {
   },
 };
 
+/*
 // Nullish Coalescing Operator
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests ? restaurant.numGuests : 10;
@@ -311,3 +312,13 @@ const game = {
     team2: 6.5,
   },
 };
+
+// Task1
+// const players1 = game.players[0];
+// console.log(players1);
+// const players2 = game.players[1];
+const [players1, players2] = game.players;
+
+// task2
+const [gk, ...fieldPlayers] = players1;
+console.log(gk);
