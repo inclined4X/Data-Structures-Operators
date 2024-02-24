@@ -333,4 +333,18 @@ const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 console.log(players1Final);
 
 // task 5
-const { team1, openingHours, categories } = game.odds;
+// const { team1, x:draw, team2 } = game.odds;
+// another way for task 5
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+
+// task 6
+function printGoals(...playerNames) {
+  console.log(playerNames);
+  console.log(`${playerNames.length} goals were scored`);
+}
+
+// printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
+// printGoals('Davies', 'Muller');
+printGoals(...game.scored);
