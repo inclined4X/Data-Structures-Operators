@@ -327,3 +327,7 @@ const [gk, ...fieldPlayers] = players1;
 // task 3
 const allPlayers = [...players1, ...players2];
 console.log(allPlayers);
+
+// task 4
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
+console.log(players1Final);
