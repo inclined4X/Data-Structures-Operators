@@ -52,6 +52,15 @@ const restaurant = {
   },
 };
 
+// Short circuting
+// Use Any data type
+// they cab return any data type
+// they can also do short circurting
+console.log(3 || 'Jonas');
+console.log('' || 'Jonas');
+console.log(true || 0);
+
+/*
 // DESTRUCTURING
 // Rest Pattern and Parameters
 // rest i sto pack elemeents into arrays
@@ -92,7 +101,7 @@ add(...x);
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 restaurant.orderPizza('mushrooms');
 
-/*
+
 //Spread operator
 //old way
 const arr = [7, 8, 9];
