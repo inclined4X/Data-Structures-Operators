@@ -57,6 +57,10 @@ restaurant.numGuests = 0;
 const guests = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests);
 
+// Nullish: null and undefined (Not 0 or '' )
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+
 /*
 // Short circuting
 console.log('--- 0R ---');
