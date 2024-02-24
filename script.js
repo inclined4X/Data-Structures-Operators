@@ -52,6 +52,18 @@ const restaurant = {
   },
 };
 
+// THE FOR OF LOOP
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+// for (const item of menu) console.log(item);
+
+for (const item of menu.entries()) {
+  console.log(item);
+}
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
 /*
 // Nullish Coalescing Operator
 restaurant.numGuests = 0;
@@ -269,7 +281,7 @@ console.log(i, j, k);
 //default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
-*/
+
 
 // CODING CHALLENGE ONE
 const game = {
@@ -352,3 +364,4 @@ printGoals(...game.scored);
 // task 7
 team1 < team2 && console.log('team 1 is more likely to win');
 team1 > team2 && console.log('team 2 is more likely to win');
+*/
