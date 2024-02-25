@@ -52,6 +52,19 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+// looping objects
+// PROPERTY NAMES
+const properties = Object.keys(openingHours);
+console.log(properties);
+let openStr = `We are open on ${properties.length} days: `;
+
+for (const day of properties) {
+  openStr += `${day}, `;
+}
+
+console.log(openStr);
+/*
 // console.log(restaurant);
 
 //optional chaining(ES 2020)
@@ -84,7 +97,7 @@ console.log(users[0]?.name ?? 'User Array Empty');
 // without optional chaining we would have written something like
 if (users.length > 0) console.log(users[0].name);
 else console.log('User Array Empty');
-/*
+
 // THE FOR OF LOOP
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
