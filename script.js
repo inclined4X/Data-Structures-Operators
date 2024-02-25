@@ -77,6 +77,13 @@ for (const day of days) {
 //Methods
 console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
 console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
+
+//ARRAYS
+const users = [{ name: 'Jezemiah', email: 'jezemiahsam48@gmail.com' }];
+console.log(users[0]?.name ?? 'User Array Empty');
+// without optional chaining we would have written something like
+if (users.length > 0) console.log(users[0].name);
+else console.log('User Array Empty');
 /*
 // THE FOR OF LOOP
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
