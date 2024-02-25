@@ -75,7 +75,8 @@ for (const day of days) {
 }
 
 //Methods
-
+console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist');
 /*
 // THE FOR OF LOOP
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
