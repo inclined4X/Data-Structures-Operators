@@ -64,6 +64,11 @@ for (const day of properties) {
 }
 
 console.log(openStr);
+
+// Property values
+const values = Object.values(openingHours);
+console.log(values);
+
 /*
 // console.log(restaurant);
 
