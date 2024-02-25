@@ -429,3 +429,18 @@ team1 > team2 && console.log('team 2 is more likely to win');
 for (const [goal, player] of game.scored.entries()) {
   console.log(`Goal ${goal + 1}: ${player}`);
 }
+
+// 2
+const odds = Object.values(game.odds);
+let sum = 0;
+let average;
+for (const odd of odds) {
+  // console.log(average);
+
+  sum += odd;
+  average = sum / odds.length;
+  // average =
+}
+
+console.log(sum);
+console.log(average);
