@@ -69,6 +69,14 @@ console.log(openStr);
 const values = Object.values(openingHours);
 console.log(values);
 
+// Entries
+const entries = Object.entries(openingHours);
+// console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+  // console.log(x);
+  console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
 /*
 // console.log(restaurant);
 
@@ -333,7 +341,7 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 
-
+*/
 // CODING CHALLENGE ONE
 const game = {
   team1: 'Bayern Munich',
@@ -389,11 +397,11 @@ const [gk, ...fieldPlayers] = players1;
 
 // task 3
 const allPlayers = [...players1, ...players2];
-console.log(allPlayers);
+// console.log(allPlayers);
 
 // task 4
 const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
-console.log(players1Final);
+// console.log(players1Final);
 
 // task 5
 // const { team1, x:draw, team2 } = game.odds;
@@ -404,15 +412,20 @@ const {
 
 // task 6
 function printGoals(...playerNames) {
-  console.log(playerNames);
-  console.log(`${playerNames.length} goals were scored`);
+  // console.log(playerNames);
+  // console.log(`${playerNames.length} goals were scored`);
 }
 
 // printGoals('Davies', 'Muller', 'Lewandowski', 'Kimmich');
 // printGoals('Davies', 'Muller');
-printGoals(...game.scored);
+// printGoals(...game.scored);
 
 // task 7
 team1 < team2 && console.log('team 1 is more likely to win');
 team1 > team2 && console.log('team 2 is more likely to win');
-*/
+
+// #2 challenge with the same object
+// task 1
+for (const [goal, player] of game.scored.entries()) {
+  console.log(`Goal ${goal + 1}: ${player}`);
+}
