@@ -17,9 +17,9 @@ const openingHours = {
     open: 11,
     close: 23,
   },
-  [`day-${2 + 4}`]: {
+  [[weekdays[5]]]: {
     open: 0, // Open 24 hours
-    close: 12 + 12,
+    close: 24,
   },
 };
 
@@ -60,9 +60,22 @@ const restaurant = {
 //   console.log(restaurant.openingHours.mon.open);
 
 // if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
+// console.log(restaurant.openingHours.mon.open);
 
 // with optional chaining
 console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mon?.open);
+
+// example
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  console.log(`On ${day}, we open at ${open}`);
+}
+
+//Methods
+
 /*
 // THE FOR OF LOOP
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
