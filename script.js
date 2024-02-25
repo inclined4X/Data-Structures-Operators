@@ -4,6 +4,7 @@
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
+//enhanced object literals
 // new array
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 // new object literal
@@ -12,7 +13,7 @@ const openingHours = {
     open: 12,
     close: 22,
   },
-  [weekdays[5]]: {
+  [weekdays[4]]: {
     open: 11,
     close: 23,
   },
@@ -51,7 +52,17 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+// console.log(restaurant);
 
+//optional chaining(ES 2020)
+// jUST IF statement
+// if (restaurant.openingHours && restaurant.openingHours.mon)
+//   console.log(restaurant.openingHours.mon.open);
+
+// if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
+
+// with optional chaining
+console.log(restaurant.openingHours.mon?.open);
 /*
 // THE FOR OF LOOP
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
@@ -75,7 +86,7 @@ console.log(guests);
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
 
-/*
+
 // Short circuting
 console.log('--- 0R ---');
 // Use Any data type
