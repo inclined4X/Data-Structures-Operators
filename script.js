@@ -58,7 +58,13 @@ const ordersSet = new Set(['Pasta', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
 console.log(ordersSet);
 
 console.log(ordersSet.size);
-/*
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+console.log(ordersSet);
+/* 
 // looping objects
 // PROPERTY NAMES
 const properties = Object.keys(openingHours);
