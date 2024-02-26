@@ -53,6 +53,12 @@ const restaurant = {
   },
 };
 
+// MAP
+const res = new Map();
+res.set('name', 'Classico Italiano');
+res.set(1, 'Firenze, Italy');
+console.log(res.set(2, 'Lisbon, Portugal'));
+/*
 // SETS
 const ordersSet = new Set(['Pasta', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
 console.log(ordersSet);
@@ -78,7 +84,8 @@ console.log(
   new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
 );
 
-/* 
+console.log(new Set('Jezemiah').size);
+
 // looping objects
 // PROPERTY NAMES
 const properties = Object.keys(openingHours);
