@@ -66,6 +66,8 @@ rest
   .set(true, 'We are open :D')
   .set(false, 'We are closed :(');
 
+console.log(rest.get('name'));
+console.log(rest.get(true));
 /*
 // SETS
 const ordersSet = new Set(['Pasta', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
