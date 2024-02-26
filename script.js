@@ -53,6 +53,12 @@ const restaurant = {
   },
 };
 
+// SETS
+const ordersSet = new Set(['Pasta', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+console.log(ordersSet);
+
+console.log(ordersSet.size);
+/*
 // looping objects
 // PROPERTY NAMES
 const properties = Object.keys(openingHours);
@@ -77,7 +83,7 @@ for (const [key, { open, close }] of entries) {
   // console.log(x);
   console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
-/*
+
 // console.log(restaurant);
 
 //optional chaining(ES 2020)
@@ -341,7 +347,7 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 
-*/
+
 // CODING CHALLENGE ONE
 const game = {
   team1: 'Bayern Munich',
@@ -383,6 +389,7 @@ const game = {
     team2: 6.5,
   },
 };
+
 
 // Task1
 // const players1 = game.players[0];
@@ -449,3 +456,4 @@ for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === 'x' ? 'draw' : `Victory ${game[team]}`;
   console.log(`Odd of ${teamStr} ${odd}`);
 }
+*/
